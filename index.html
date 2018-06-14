@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/javascript/app.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body>
+        <h2 class="quizHeader">Take a Quiz!</h2>
+
+        <table style="width:750px">
+            <tr>
+                <td>
+                    <div>
+                        <p class="question">1. Is the Earth flat?</p>
+
+                        <ul>
+                            <input class="answer" type="radio" name="q1" value="1">
+                            <label id="correctString1">No</label>
+                            <br>
+                            <input class="answer" type="radio" name="q1" value="0">
+                            <label>Yes</label>
+                            <br>
+                            <input class="answer" type="radio" name="q1" value="0">
+                            <label>Who knows</label>
+                            <br>
+                            <input class="answer" type="radio" name="q1" value="0">
+                            <label>Maybe</label>
+                        </ul>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <p class="question">2. 1 + 1 = ?</p>
+
+                        <ul>
+                            <input class="answer" type="radio" name="q2" value="0">
+                            <label>Seven</label>
+                            <br>
+                            <input class="answer" type="radio" name="q2" value="1">
+                            <label id="correctString2">Two</label>
+                            <br>
+                            <input class="answer" type="radio" name="q2" value="0">
+                            <label>Three</label>
+                            <br>
+                            <input class="answer" type="radio" name="q2" value="0">
+                            <label>Eleven</label>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div>
+                        <p class="question">3. In which month is the October Revolution celebrated in Russia (also called the Bolshevik Revolution)?</p>
+
+                        <ul>
+                            <input class="answer" type="radio" name="q3" value="0">
+                            <label>January</label>
+                            <br>
+                            <input class="answer" type="radio" name="q3" value="1">
+                            <label id="correctString3">October</label>
+                            <br>
+                            <input class="answer" type="radio" name="q3" value="0">
+                            <label>July</label>
+                            <br>
+                            <input class="answer" type="radio" name="q3" value="0">
+                            <label>December</label>
+                        </ul>
+                    </div>
+                </td>
+                <td>
+                    <div>
+                        <p class="question">4. What was the tallest mountain before mount Everest?</p>
+
+                        <ul>
+                            <input class="answer" type="radio" name="q4" value="0">
+                            <label>Mount Rushmore</label>
+                            <br>
+                            <input class="answer" type="radio" name="q4" value="1">
+                            <label id="correctString4">Mount Everest</label>
+                            <br>
+                            <input class="answer" type="radio" name="q4" value="0">
+                            <label>Mount Kilimanjaro</label>
+                            <br>
+                            <input class="answer" type="radio" name="q4" value="0">
+                            <label>Mount Fuji</label>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <div class="submitter">
+            <input class="quizSubmit" id="submitButton" onClick="submitQuiz()" type="submit" value="Submit">
+        </div>
+
+        <div id="quizAnswersBox">
+            <div class="quizAnswers" id="correctAnswer1"></div>
+            <div class="quizAnswers" id="correctAnswer2"></div>
+            <div class="quizAnswers" id="correctAnswer3"></div>
+            <div class="quizAnswers" id="correctAnswer4"></div>
+            
+            <h2 class="quizScore" id="userScore"></h2>
+        </div>
+        </div>
+
+    </body>
+</body>
+
+</html>
